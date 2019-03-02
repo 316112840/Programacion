@@ -50,22 +50,25 @@ class Parabola:
         E = Parabola1.B + Parabola2.B
         F = Parabola1.C + Parabola2.C
         Parabola3 = Parabola(D,E,F)
-        print("El resultado de la suma de las parábolas ingresadas es: ",Parabola3) 
+        return Parabola3
         
 
 P1 = Parabola(-4, 4, 1)
 P2 = Parabola(13,7, 1)
 P3 = Parabola(1,4,4)
-S = "                                       "
+S = "        "
 P1.MostrarEcuacion()
 P1.TipoRaiz()
 print(S)
+
 P2.MostrarEcuacion()
 P2.TipoRaiz()
 print(S)
-Parabola.SumaParabolas(P1,P2)
-print(S)
+
 P3.MostrarEcuacion()
 P3.TipoRaiz()
+print(S)
 
-
+P4 = Parabola.SumaParabolas(P1,P2)
+print(P4)
+P4.MostrarEcuacion()

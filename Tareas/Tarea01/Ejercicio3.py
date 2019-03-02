@@ -14,20 +14,22 @@ class VectorND:
         else :
             print("ERROR. El valor", self.n,"no corresponde con la cantidad de elementos que contiene el vector.")
     def MultiplicarPorEscalar(self, c):
-        Vector3 = []
+        V3 = []
         if self.n == len(self.V):
             for i in range(self.n):
-                Vector3.append(self.V[i]*c)
-            print("El vector que resulta de multilicar el vector ingresado por",c,"es:",Vector3)
+                V3.append(self.V[i]*c)
+            Vector3 = VectorND(self.n, V3)
+            return (Vector3)
         else :
             print("ERROR. El valor", self.n,"no corresponde con la cantidad de elementos que contiene el vector.")
     def SumaDeVectores(Vector1,Vector2):
-        Vector4 = []
+        V4 = []
         if Vector1.n == len(Vector1.V) and Vector2.n == len(Vector2.V):
             if Vector1.n == Vector2.n:
                 for i in range(Vector1.n):
-                    Vector4.append(Vector1.V[i] + Vector2.V[i])
-                print("El vector que resulta de sumar los dos vectores dados es: ", Vector4 )
+                    V4.append(Vector1.V[i] + Vector2.V[i])
+                    Vector4 = VectorND( Vector1.n, V4)
+                return Vector4 
             else:
                 print("ERROR. Ambos vectores debe tener la misma cantidad de elementos para poder sumarlos.")
         else:
@@ -42,13 +44,24 @@ V3 = VectorND(5, [4,6,8,13,5])
 V4 = VectorND(3, [1,2,3,4])
 V1.MostrarEntradas()
 print(S)
-V1.MultiplicarPorEscalar(3)
+
+V5 = V1.MultiplicarPorEscalar(3)
+print(V5)
+print(V5.V)
 print(S)
-V1.MultiplicarPorEscalar(5)
+
+V6 = V1.MultiplicarPorEscalar(5)
+print(V6)
+print(V6.V)
 print(S)
+
 VectorND.SumaDeVectores(V1,V2)
 print(S)
-VectorND.SumaDeVectores(V1,V3)
-print(S)
+
 V4.MostrarEntradas()
-        
+print(S)
+
+V7 = VectorND.SumaDeVectores(V1,V3)
+print (V7)
+print((V7.n, V7.V))
+print(S)
