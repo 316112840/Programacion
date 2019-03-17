@@ -11,7 +11,6 @@ class Tienda:
         self.Producto = Producto
         self.Cliente = Cliente
 
-    def ImprimirDetalles(self):
-        print( self.Nombre)
-        print(self.Cliente)
-        print(self.Producto)
+    def __str__(self):
+        detalles = "NOMBRE DE LA TIENDA: " + self.Nombre + "\n" +str(self.Cliente) +"\n" + str(self.Producto)
+        return detalles

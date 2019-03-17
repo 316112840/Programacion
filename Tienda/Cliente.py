@@ -2,11 +2,12 @@
 # Mariana Yasmin Martinez Garcia
 
 class Cliente:
+    
     def __init__ (self, Nombre, Saldo):
         self.Nombre = Nombre
         self.Saldo = Saldo
 
-    def ImprimirDetalles(self):
-        print("NOMBRE DEL CLIENTE: ", self.Nombre)
-        print("SALDO DEL CLIENTE:", self.Saldo)
+    def __str__(self):
+        detalles = "NOMBRE DEL CLIENTE:" + self.Nombre + "\n   Saldo:" + str(self.Saldo)
+        return detalles
         
