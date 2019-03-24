@@ -12,7 +12,7 @@ class Herencia:
         self.promedio = Promedio
 
     def __str__(self):
-        cadena = "NÚMERO DE CUENTA: " + str(self.numero) + "\nNOMBRE: " + self.nombre + "\nPROMEDIO: " + str(self.promedio)
+        cadena = "NÚMERO DE CUENTA: " + str(self.numero) + "\nNOMBRE: " + self.nombre + " " + self.apellidos + "\nPROMEDIO: " + str(self.promedio)
         return cadena
 
     def AgregarCalificacion(self, NuevaCalificacion):
@@ -44,6 +44,7 @@ class Herencia:
 
 
 # Pruebas:
+print("ESTAS SON LAS PRUEBAS DE LA CLASE Herencia: ")
 S = "\n"
 Herencia1 = Herencia( "Mariana", "Martínez",31611280, [8.3,8.6,8.1,9.2], 8.55)
 
