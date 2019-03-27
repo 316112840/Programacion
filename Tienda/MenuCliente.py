@@ -10,3 +10,4 @@ class MenuCliente:
     def NuevoCliente(self):
         nombre = input("Ingrese su nombre: ")
         saldo = input("Ingrese su saldo: ")
+        
