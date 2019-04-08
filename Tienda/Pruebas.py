@@ -53,22 +53,22 @@ class Pruebas:
     
                        
     # Estas son las pruebas de la clase Tienda.py :
-    Tienda1 = Tienda("LicuaDora's", Producto1, Cliente1)
+    Tienda1 = Tienda("LicuaDora's", Cliente1)
     print(Tienda1)
     print(S)
     
-    Tienda2 = Tienda("Miau Miau", Producto2, Cliente2)
+    Tienda2 = Tienda("Miau Miau",Cliente2)
     print(Tienda2)
     print(S)
     
-    Tienda3 = Tienda("Todo de Coco", Producto3, Cliente3)
+    Tienda3 = Tienda("Todo de Coco",Cliente3)
     print(Tienda3)
     print(S)
     
-    Tienda4 = Tienda("Lavadoras Pepe", Producto4, Cliente4)
+    Tienda4 = Tienda("Lavadoras Pepe",Cliente4)
     print(Tienda4)
     print(S)
     
-    Tienda5 = Tienda("La sonrisa", Producto5, Cliente5)
+    Tienda5 = Tienda("La sonrisa", Cliente5)
     print(Tienda5)
     print(S)

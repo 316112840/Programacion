@@ -8,6 +8,6 @@ class Cliente:
         self.Saldo = Saldo
 
     def __str__(self):
-        detalles = "NOMBRE DEL CLIENTE:" + self.Nombre + "\n   Saldo:" + str(self.Saldo)
+        detalles = "NOMBRE DEL CLIENTE:" + self.Nombre + "\n" + "Saldo:" + str(self.Saldo)
         return detalles
         
