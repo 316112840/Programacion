@@ -1,5 +1,6 @@
-#Esta clase se llama "Producto", esta recibirá el nombre de algún producto, su marca, categoría y precio.
-# Martinez García Mariana Yasmin
+'''Esta clase se llama "Producto", esta recibira el nombre de algun producto, su marca, categoria y precio.
+Se modifico el metodo por "str" que nos permite facilitar la forma de llamar al objeto'''
+# Martinez Garcia Mariana Yasmin
 
 class Producto:
     
@@ -10,5 +11,5 @@ class Producto:
         self.Precio = Precio
         
     def __str__(self):
-        detalles = "NOMBRE DEL PRODUCTO:" + self.Nombre + "\n   MARCA: " + self.Marca + "\n   CATEGORÍA: " + self.Categoria + "\n   PRECIO: " + str(self.Precio)
+        detalles = "NOMBRE DEL PRODUCTO:" + self.Nombre + "\n   MARCA: " + self.Marca + "\n   CATEGORIA: " + self.Categoria + "\n   PRECIO: " + str(self.Precio)
         return detalles

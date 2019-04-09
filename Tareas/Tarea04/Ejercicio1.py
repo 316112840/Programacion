@@ -2,11 +2,11 @@
 # Mariana Yasmin Martínez García
 # Correo: mariana_yasmin@ciencias.unam.mx
 # Ejercicio 4.1: Clase Smartphone parte 1
+from random import *
 
 
 class Smartphone:
-
-    def __init__ (marca, pantalla, IMEI, codigoBloqueo, bloqueado, bateria):
+    def __init__(marca, pantalla, IMEI, codigoBloqueo, bloqueado, bateria):
         self.marca = marca
         self.pantalla = pantalla
         self.imei = IMEI
@@ -64,5 +64,5 @@ class Smartphone:
             print("ERROR. El codigo ingresado es incorrecto.")
 
 
-
-    
+# Pruebas:
+c1 = Smartphone("Samsung",   "123456789101112", 1234, True, 50)

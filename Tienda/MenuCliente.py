@@ -1,5 +1,5 @@
-# Esta es una clase que tiene como método el registro de un cliente, los datos que se ingresarán son el nombre y su saldo.
-# Martínez García Mariana Yasmin
+# Esta es una clase que tiene como metodo el registro de un cliente, los datos que se ingresaran son el nombre y su saldo.
+# Martinez Garcia Mariana Yasmin
 from Tienda import *
 
 class MenuCliente:

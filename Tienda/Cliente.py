@@ -1,4 +1,4 @@
-# Esta es una clase llamada Cliente.py que tendrá como atributos Nombre y Valor. Y tendrá como métodos Imprimir Detalles.
+# Esta es una clase llamada Cliente.py que tendra como atributos Nombre y Valor. Y tendra como metodos Imprimir Detalles.
 # Mariana Yasmin Martinez Garcia
 
 class Cliente:
