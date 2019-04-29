@@ -6,6 +6,8 @@ y mostrarProductos, que permite ver los productos que contiene la tienda.'''
 from Cliente import *
 from Producto import *
 
+
+
 class Tienda:
     
     def __init__(self, Nombre, Cliente):
@@ -14,9 +16,11 @@ class Tienda:
         self.almacenarProductos = Tienda.almacenarProductos()
 
 
+
     def __str__(self):
         detalles = "NOMBRE DE LA TIENDA: " + self.Nombre + "\n" +str(self.Cliente) +"\n" 
         return detalles
+
 
 
     def almacenarProductos():
@@ -27,6 +31,8 @@ class Tienda:
         productos.append(Producto("Lavadora", "Whirpool", "Electrodomesticos", 3500.0))
         productos.append(Producto("Cepillo de dientes", "Colgate", "Higiene bucal", 45.0))
         return productos
+
+
 
     def mostrarProductos():
         for i in Tienda.almacenarProductos():
