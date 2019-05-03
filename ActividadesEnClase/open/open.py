@@ -1,3 +1,6 @@
+import random as r
+
+
 
 # r es para lectura de archivos
 
@@ -5,7 +8,7 @@ archivo1 = open("Ejemplo1.txt", "r")
 
 for linea in archivo1:
     print(linea)
-    # print(linea.rstrip())   Con esto se quitan lineas vacias y espacios al final de la linea.
+    #print(linea.rstrip())   Con esto se quitan lineas vacias y espacios al final de la linea.
 
 archivo1.close()
 '''Para este ejemplo, primero necesite crear el archivo llamado "Ejemplo1.txt". '''
@@ -74,3 +77,85 @@ for i in range(10):
 ejercicio1.close()
 
 
+
+
+
+
+
+
+
+# Esto se hizo el 2 de mayo.
+
+# Comando with, nos permite no incluir la linea de cerrar el archivo porque lo cierra solo.
+
+with open("Ejemplo7.txt", "w") as Ejemplo7:
+    Ejemplo7.write("Linea 1 del archivo")
+
+
+
+
+# El modo a, lectura y escritura
+
+with open("Ejemplo8.txt", "w") as Ejemplo8:
+    Ejemplo8.write("hbtrdrexc\n")
+
+
+with open("Ejemplo8.txt", "a") as Ejemplo8:
+    Ejemplo8.write("jhgswsd\n")
+    Ejemplo8.write("nhvvrwaj\n")
+
+
+with open("Ejemplo8.txt", "r") as Ejemplo8:
+    for linea in Ejemplo8:
+        print(linea)
+
+
+
+
+
+
+with open("Ejemplo9.txt", "w") as Ejemplo9:
+    for i in range(5):
+        Ejemplo9.write(str(r.random()) + "\n")
+
+
+with open("Ejemplo9.txt", "r") as Ejemplo9:
+    for linea in Ejemplo9:
+        numero = float(linea)
+        print(numero,)
+    
+
+
+
+
+
+
+with open("Ejemplo9.txt", "r") as Ejemplo9:
+    suma = 0.0
+    numeroLineas = 0
+    for linea in Ejemplo9:
+        numero = float(linea)
+        suma = suma + numero
+        print(numero)
+        numeroLineas += 1
+
+print("Promedio: ", suma/numeroLineas)
+
+print("La suma fue de: ", suma)
+
+
+
+
+# Comando split
+
+with open("Ejemplo10.txt", "w") as Ejemplo10:
+    Ejemplo10.write("ARI 123456789 25 \n")
+    Ejemplo10.write("ERNESTO 145678923 27 \n")
+    Ejemplo10.write("Adan 9876549 29 \n")
+
+with open("Ejemplo10.txt", "r") as Ejemplo10:
+    for linea in Ejemplo10:
+        datos = linea.split()
+        for cadena in datos:
+            print(cadena)
+    
