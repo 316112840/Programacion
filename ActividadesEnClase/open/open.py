@@ -155,7 +155,7 @@ with open("Ejemplo10.txt", "w") as Ejemplo10:
 
 with open("Ejemplo10.txt", "r") as Ejemplo10:
     for linea in Ejemplo10:
-        datos = linea.split()
+        datos = linea.split() # Split separa cuando encuentre lo que haya entre parentesis. Si no se coloca nada, se separara cuando haya espacios.
         for cadena in datos:
             print(cadena)
     
