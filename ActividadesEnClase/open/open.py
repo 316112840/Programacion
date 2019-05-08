@@ -159,3 +159,7 @@ with open("Ejemplo10.txt", "r") as Ejemplo10:
         for cadena in datos:
             print(cadena)
     
+
+
+
+
